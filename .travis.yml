@@ -1,0 +1,10 @@
+language: ruby
+cache: bundler
+services:
+  - postgresql
+script:
+  - RAILS_ENV=test bundle exec rails spec
+before_script:
+  - psql -c 'create database travis_ci_test;' -U postgres
+  - cp config/database.travis.yml config/database.yml
+bundler_args: --binstubs=./bundler_stubs
