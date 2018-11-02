@@ -9,12 +9,18 @@ RSpec.describe 'Game endpoint', type: :request do
 
     it 'returns a JSON containing a "board" key' do
       get '/v1/game'
-      expect(json_response.keys).to eq([:board])
+
+      json_response = JSON.parse(response.body)
+
+      expect(json_response.keys).to eq(['board'])
     end
 
     it 'returns a JSON containing an array as the value' do
       get '/v1/game'
-      expect(json_response[:board]).to eq(['','','','','','','','',''])
+
+      json_response = JSON.parse(response.body)
+
+      expect(json_response['board']).to eq(['','','','','','','','',''])
     end
   end
 end

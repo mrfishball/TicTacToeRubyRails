@@ -9,12 +9,18 @@ RSpec.describe Api::V1::GameController, type: :controller do
 
     it 'renders a JSON containing a "board" key' do
       get :index
-      expect(json_response.keys).to eq([:board])
+
+      json_response = JSON.parse(response.body)
+
+      expect(json_response.keys).to eq(['board'])
     end
 
     it 'renders a JSON containing an array as the value' do
       get :index
-      expect(json_response[:board]).to eq(['','','','','','','','',''])
+
+      json_response = JSON.parse(response.body)
+
+      expect(json_response['board']).to eq(['','','','','','','','',''])
     end
   end
 end
