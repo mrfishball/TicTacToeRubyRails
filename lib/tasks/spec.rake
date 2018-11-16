@@ -15,9 +15,9 @@ end
 desc "Run all spec"
 task :spec do
   Rake::Task['spec:unit'].invoke
-  puts "...All unit tests passed...".green
-  puts "...Functional tests begin...".green
+  puts "...All unit tests passed..."
+  puts "...Functional tests begin..."
 
   Rake::Task['spec:functional'].invoke
-  puts "...All unit and functional tests passed...".green
+  puts "...All unit and functional tests passed..."
 end

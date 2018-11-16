@@ -12,7 +12,6 @@ group :development, :test do
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
-  gem 'colorize'
 end
 
 group :development do
