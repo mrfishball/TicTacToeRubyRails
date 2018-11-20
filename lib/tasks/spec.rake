@@ -1,5 +1,3 @@
-require 'colorize'
-
 Rake::Task[:spec].clear
 
 namespace :spec do
