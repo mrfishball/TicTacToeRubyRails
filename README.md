@@ -1,23 +1,8 @@
-# TicTacToeRails::API
+# A Tic-Tac-Toe API
 
 [![Build Status](https://travis-ci.com/mrfishball/TicTacToeRubyRails.svg?branch=master)](https://travis-ci.com/mrfishball/TicTacToeRubyRails)
 
-**TicTacToeRails::API** is alive [@Heroku](https://live-ttt-rubyrails-api.herokuapp.com)!
-
 It is used to implement your very own Tic-Tac-Toe game on virtually any platform of your choice.
-
-### What is an API app?
-
-**TicTacToeRails::API** provides a programmatically accessible API alongside their web application.
-For example, GitHub provides [an API](http://developer.github.com) that you can use from your own custom clients.
-
-With the advent of client-side frameworks, more developers are using Rails to build a backend that is shared between their web application and other native applications.
-
-For example, Twitter uses its [public API](https://dev.twitter.com) in its web application, which is built as a static site that consumes JSON resources.
-
-### Documentation
-
-Coming soon
 
 Development
 ------------------------------
@@ -31,9 +16,8 @@ You're going to need:
 
 ### Getting Set Up
 
-1. Fork this repository on GitHub.
-2. Clone *your forked repository* (not our original one) to your hard drive with `git clone https://github.com/YOURUSERNAME/TicTacToeRubyRails.git`
-3. `cd TicTacToeRubyRails`
+1. Clone this repository to your local machine.  
+2. cd into the repo you just cloned.
 4. Initialize and start TicTacToeRubyRails.
 
 ```shell
